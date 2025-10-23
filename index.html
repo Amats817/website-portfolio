@@ -35,7 +35,7 @@
         <div class="buttons" data-aos="fade-up" data-aos-delay="200">
           <a
             href="https://github.com/Amats817"
-            class="btn-primary"
+            class="btn-outline"
             target="_blank"
             >GitHub</a
           >
@@ -47,11 +47,11 @@
           >
           <a
             href="./assets/Resume.pdf"
-            class="btn-primary"
+            class="btn-outline"
             download
             id="download-resume"
           >
-            <img src="./assets/download.png" /> Resume</a
+            <i class="fa-solid fa-download"></i>&nbsp;&nbsp;Resume</a
           >
           <a href="#contact" class="btn-outline">Contact Me</a>
         </div>
@@ -81,36 +81,55 @@
     </section>
 
     <section id="jobs">
-      <div class="jobs-featured-container" data-aos="fade-up">
+      <div class="jobs-container">
         <h2>Jobs &amp; Internships</h2>
 
-        <div class="job-featured-card">
-          <div class="accent-stripe"></div>
+        <div class="jobs-grid">
+          <!-- ECISD Job -->
+          <div class="job-card" data-aos="fade-up">
+            <div class="job-card-header">
+              <img
+                src="./assets/ecisd.png"
+                alt="ECISD Logo"
+                class="job-logo"
+              />
+              <div class="job-info">
+                <h3>Ector County ISD</h3>
+                <p class="job-role">Information Technology</p>
+                <p class="job-period">Current Position</p>
+              </div>
+            </div>
+            <div class="job-description">
+              <p>
+                Working in the Information Technology department at Ector County Independent School District,
+                supporting technology infrastructure and providing technical solutions for the district's educational needs.
+              </p>
+            </div>
+          </div>
 
-          <div class="card-content">
-            <div class="card-header">
+          <!-- Sports Media Inc Internship -->
+          <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="job-card-header">
               <img
                 src="./assets/sportsmedianet_logo.jpg"
                 alt="Sports Media Inc. Logo"
-                class="company-logo"
+                class="job-logo"
               />
-              <div class="company-info">
+              <div class="job-info">
                 <h3>Sports Media Inc.</h3>
-                <p class="job-title">
-                  <em>Fullstack Developer, Internship</em>
-                </p>
+                <p class="job-role">Fullstack Developer</p>
+                <p class="job-period">Internship</p>
               </div>
             </div>
-
-            <p class="job-desc">
-              Sports Media Inc. is a leading sports focused media advertising
-              and strategy consultancy, delivering end to end solutions,
-              including OTT and live sports programming, media buying, digital
-              and Jumbotron signage, sponsorship activation, and branded
-              licensing across the top 250 US DMAs. It also operates an industry
-              leading online auction platform and maintains partnerships with
-              major leagues (MLB, NFL, NBA, NHL, PGA, NCAA, NASCAR).
-            </p>
+            <div class="job-description">
+              <p>
+                Sports Media Inc. is a leading sports focused media advertising and strategy consultancy,
+                delivering end-to-end solutions including OTT and live sports programming, media buying,
+                digital and Jumbotron signage, sponsorship activation, and branded licensing across the
+                top 250 US DMAs. Operates an industry leading online auction platform with partnerships
+                across major leagues (MLB, NFL, NBA, NHL, PGA, NCAA, NASCAR).
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -126,42 +145,36 @@
               <i class="devicon-html5-plain"></i>
               <div>
                 <h4>HTML</h4>
-                <small class="text-light">Experienced</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-css3-plain"></i>
               <div>
                 <h4>CSS</h4>
-                <small class="text-light">Experienced</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-javascript-plain"></i>
               <div>
                 <h4>JavaScript</h4>
-                <small class="text-light">Experienced</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-react-original"></i>
               <div>
                 <h4>React</h4>
-                <small class="text-light">Advanced</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-typescript-plain"></i>
               <div>
                 <h4>TypeScript</h4>
-                <small class="text-light">Experienced</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-figma-plain"></i>
               <div>
                 <h4>Figma</h4>
-                <small class="text-light">Advanced</small>
               </div>
             </article>
           </div>
@@ -174,35 +187,30 @@
               <i class="devicon-mysql-plain"></i>
               <div>
                 <h4>SQL</h4>
-                <small class="text-light">Experienced</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-nodejs-plain"></i>
               <div>
                 <h4>Node.js</h4>
-                <small class="text-light">Experienced</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-php-plain"></i>
               <div>
                 <h4>PHP</h4>
-                <small class="text-light">Advanced</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-mongodb-plain"></i>
               <div>
                 <h4>MongoDB</h4>
-                <small class="text-light">Intermediate</small>
               </div>
             </article>
             <article class="experience__details">
               <i class="devicon-express-original"></i>
               <div>
                 <h4>Express</h4>
-                <small class="text-light">Advanced</small>
               </div>
             </article>
           </div>
@@ -226,11 +234,6 @@
                 A static, responsive front-end design replicating Reddit’s
                 interface.
               </p>
-              <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-              </div>
               <div class="project-links">
                 <a
                   href="https://github.com/Amats817/reddit-clone/tree/main"
@@ -260,11 +263,6 @@
                 to search for meals, view details, and leave comments on
                 recipes.
               </p>
-              <div class="project-tech">
-                <span>Express</span>
-                <span>API</span>
-                <span>Database</span>
-              </div>
               <div class="project-links">
                 <a
                   href="https://github.com/Amats817/recipe-website"
@@ -294,10 +292,6 @@
                 search songs and easily build custom playlists with a
                 streamlined, user-friendly interface.
               </p>
-              <div class="project-tech">
-                <span>React</span>
-                <span>Api</span>
-              </div>
               <div class="project-links">
                 <a
                   href="https://github.com/Amats817/spotify-playlist-maker"
@@ -326,11 +320,6 @@
                 A responsive website for a dumpling restaurant built with HTML,
                 CSS, and JavaScript
               </p>
-              <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
               <div class="project-links">
                 <a
                   href="https://github.com/Amats817/Dumplify"
@@ -359,11 +348,6 @@
                 A responsive front-end clothing store design built with HTML,
                 CSS, and JavaScript
               </p>
-              <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
               <div class="project-links">
                 <a
                   href="https://github.com/Amats817/Woven"
